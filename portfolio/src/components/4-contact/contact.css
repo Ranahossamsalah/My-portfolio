@@ -1,0 +1,105 @@
+/** @format */
+/*===============
+tabel of contents
+=================*/
+/* 
+1-title & paragraph
+2-form
+3-animation
+4-responsive
+*/
+
+/*================= 1-title & paragraph ===================*/
+.contactMe .icon-envelope-o {
+  margin-left: 2rem;
+}
+
+.contactMe h2,
+.contactMe p {
+  margin-bottom: 1.5rem;
+}
+.contactMe p {
+  opacity: 70%;
+}
+
+/*================= 2-form ===================*/
+.contactMeBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactMe form {
+  flex-grow: 0.8;
+}
+.contactMe label {
+  display: inline-block;
+  width: 100px;
+}
+.contactMe .textArea {
+  display: flex;
+}
+
+.contactMe textarea,
+.contactMe input {
+  width: 75%;
+  border-radius: 5px;
+  background-color: var(--btnBackgroundColor);
+  border: 2px solid var(--btnBorder);
+  opacity: 80%;
+  color: var(--secondaryColor);
+  padding: 20px;
+}
+.contactMe input {
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+.contactMe textarea {
+  height: 130px;
+}
+.contactMe #submit {
+  height: 2.5rem;
+  width: 10rem;
+  margin-bottom: 0rem;
+  margin-right: 0rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  opacity: 100%;
+  padding: 0rem;
+}
+.contactMe .animation {
+  /* flex-grow: 1; */
+}
+.contactMe .success{
+  opacity: 100%;
+  color: var(--success);
+}
+/*================= 4-responsive ===================*/
+@media screen and (max-width: 700px) {
+  .contactMe {
+    display: block;
+  }
+  .contactMe .textArea {
+    display: block;
+  }
+  .contactMe textarea,
+  .contactMe input {
+    width: 90%;
+  }
+
+  .contactMeBox,
+  .contactMe label {
+    display: block;
+  }
+  .contactMe label {
+    margin-bottom: 0.5rem;
+  }
+  .contactMeBox {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contactMe form {
+    padding: 20px;
+  }
+}

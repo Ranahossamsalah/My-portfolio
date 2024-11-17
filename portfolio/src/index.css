@@ -1,0 +1,87 @@
+/** @format */
+
+/* general */
+
+:root {
+  --primary: black;
+  --secondary: white;
+  --border: rgb(48, 48, 51);
+  --bgColor: rgb(37, 37, 41);
+  --containerBg: rgb(25, 25, 28);
+   --btnBorderHover: rgb(179, 184, 224);
+   --btnBorder : rgba(179, 184, 224, 0.152);
+   --btnBackgroundColor:rgba(100, 148, 237, 0.109);
+   --btnBackgroundColorHover:rgba(100, 148, 237, 0.399);
+   --link: rgb(0, 149, 255);
+   --success: rgb(20, 171, 20);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--secondary);
+}
+html{
+  font-size: 18px;
+}
+.flex {
+  display: flex;
+}
+.line {
+  height: 2px;
+  background-color: var(--border);
+  margin: 40px 0;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: all 0.5s;
+}
+a:hover {
+  cursor: pointer;
+
+}
+button {
+  all:unset;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+
+.light {
+  --primary: white;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  border: 1px solid var(--border);
+  background-color: var(--containerBg);
+  padding: 0 4%;
+}
+
+@media screen and (max-width: 700px) {
+ 
+  .container {
+    width: 90%;
+    padding: 0 2%;
+  }
+  html{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 98%;
+    padding: 0 2%;
+  }
+
+}

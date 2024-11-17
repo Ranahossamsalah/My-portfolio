@@ -1,0 +1,131 @@
+/** @format */
+/*===============
+tabel of contents
+=================*/
+/* 
+1-leftSection
+2-rightSection
+3-cards
+4-card
+5-responsive
+*/
+
+/*============================================================= 1-leftSection ================================================================*/
+
+.mainSection .leftSection {
+  width: 30%;
+}
+.mainSection .leftSection .btn {
+  width: 90%;
+  border: var(--btnBorder) solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 15px 0px;
+  background-color: var(--btnBackgroundColor);
+  opacity: 0.5;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  letter-spacing: 0.1rem;
+}
+.mainSection .leftSection .btn:hover {
+  background-color: var(--btnBackgroundColorHover);
+  border: var(--btnBorderHover) solid 1px;
+  opacity: 1;
+}
+.mainSection .leftSection .active {
+  background-color: var(--btnBackgroundColorHover);
+  border: var(--btnBorderHover) solid 1px;
+  opacity: 1;
+}
+/*============================================================== 2-rightSection ==========================================================*/
+.mainSection .rightSection {
+  margin: auto;
+  width: 70%;
+}
+/*============================================================== 3-cards ==================================================================*/
+.mainSection .rightSection .cards {
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/*================================================================ 4-card =================================================================*/
+
+.mainSection .rightSection .card {
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  border: var(--btnBackgroundColor) solid 2px;
+  border-radius: 20px;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.mainSection .rightSection .card:hover {
+ 
+  border: var(--btnBackgroundColorHover) solid 2px;
+rotate:1deg;
+scale: 1.05;
+
+}
+
+.mainSection .rightSection .card img {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2),
+    0 6px 20px 0 rgba(135, 135, 135, 0.19);
+  max-width: 100%;
+  margin-bottom: 1.1rem;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.mainSection .rightSection .card h3 {
+  margin-bottom: 0.4rem;
+}
+.mainSection .rightSection .card p {
+  width: 90%;
+  margin: auto;
+  flex-grow: 1;
+  text-align: justify;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.mainSection .rightSection .card .cardFooter {
+  background-color: var(--btnBackgroundColor);
+  justify-content: space-between;
+  padding: 5px 15px;
+  border-radius: 0px 0px 20px 20px;
+}
+.mainSection .rightSection .card .cardFooter .icon-link {
+  margin-right: 10px;
+}
+.mainSection .rightSection .card .cardFooter .icon-long-arrow-right {
+  margin-left: 5px;
+}
+.mainSection .rightSection .card .cardFooter a:hover {
+  color: var(--link);
+}
+/*============================================================ 5-responsive =============================================================*/
+@media screen and (max-width: 700px) {
+  .mainSection .leftSection .btn {
+    font-size: 1rem;
+  }
+  .mainSection .leftSection {
+    width: 40%;
+  }
+
+  .mainSection .rightSection .card {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainSection .leftSection .btn {
+    font-size: 1rem;
+  }
+  .mainSection .leftSection {
+    width: 50%;
+  }
+}

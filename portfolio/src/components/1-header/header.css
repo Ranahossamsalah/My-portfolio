@@ -1,0 +1,114 @@
+/** @format */
+/*===============
+tabel of contents
+=================*/
+/* 
+1-header
+2-menuBtn
+3-model
+4-responsive
+*/
+
+/*================= 1-header ===================*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.header ul {
+  display: flex;
+}
+.header .navbar {
+  background-color: var(--bgColor);
+  border: 2px solid var(--border);
+  padding: 10px;
+  border-radius: 18px;
+}
+
+.header .navbar ul li a {
+  padding: 0 10px;
+}
+.header ul li a:hover {
+  color:var(--link);
+}
+
+/*================ 2-menuBtn =================*/
+.header .menuBtn {
+  margin-left: 50px;
+  display: none;
+}
+.header .menuBtn,
+.header .lightBtn {
+  background-color: var(--bgColor);
+  border: 2px solid var(--border);
+  color: var(--secondary);
+  padding: 10px;
+  border-radius: 18px;
+  margin-right: 50px;
+}
+
+/*================ 3-model =================*/
+.header .model {
+  inset: 0;
+  position: fixed;
+  background-color: rgba(43, 43, 43, 0.942);
+}
+
+.header .modelNavbar {
+  animation: modelMove 0.6s;
+  width: 60%;
+  margin: auto;
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+  display: block;
+  margin-top: 30px;
+}
+
+.header .modelNavbar li {
+  border-bottom: 2px solid var(--border);
+  padding: 10px 0;
+}
+
+.header .modelNavbar li:last-child {
+  border: none;
+}
+.header .modelNavbar li:first-child {
+  border-bottom: none;
+  text-align: right;
+}
+.header .modelNavbar .closeBtn {
+  all: unset;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.header .modelNavbar .closeBtn:hover {
+  rotate: 180deg;
+  font-size: 2.5rem;
+  color: red;
+}
+
+/*================ 4-responsive =================*/
+
+@media screen and (max-width: 700px) {
+  .header .navbar {
+    display: none;
+  }
+  .header .menuBtn {
+    display: block;
+  }
+  /* .header.menuBtn{display: block;} */
+}
+@keyframes modelMove {
+  0% {
+    transform: scale(0.6);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

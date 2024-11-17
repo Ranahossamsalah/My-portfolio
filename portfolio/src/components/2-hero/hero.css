@@ -1,0 +1,37 @@
+/** @format */
+/*===============
+tabel of contents
+=================*/
+/* 
+1-
+2-
+3-
+4-
+*/
+
+.heroSection .leftSection {
+  align-items: center;
+  width: 70%;
+}
+
+.heroSection .leftSection h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.heroSection .icon {
+  margin: 20px 20px 20px 0;
+  scale: 160%;
+}
+.heroImg {
+  padding: 2px;
+  border: rgb(0, 94, 255) solid 2px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 700px) {
+  .heroSection .leftSection h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+}
