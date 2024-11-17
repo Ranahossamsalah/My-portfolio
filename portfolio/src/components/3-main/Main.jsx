@@ -5,7 +5,7 @@ import "./main.css";
 function Main() {
   return (
     <div className="mainSection">
-      <section className="flex">
+      <section >
         <div className="leftSection">
           <button className="btn active"> All Projects</button>
           <button className="btn"> React Projects</button>

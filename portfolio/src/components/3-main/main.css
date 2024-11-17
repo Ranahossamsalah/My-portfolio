@@ -7,9 +7,13 @@ tabel of contents
 2-rightSection
 3-cards
 4-card
-5-responsive
+5-cardfooter
+6-responsive
 */
 
+.mainSection section {
+  display: flex;
+}
 /*============================================================= 1-leftSection ================================================================*/
 
 .mainSection .leftSection {
@@ -21,7 +25,7 @@ tabel of contents
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   padding: 15px 0px;
   background-color: var(--btnBackgroundColor);
   opacity: 0.5;
@@ -48,7 +52,7 @@ tabel of contents
 /*============================================================== 3-cards ==================================================================*/
 .mainSection .rightSection .cards {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -64,11 +68,9 @@ tabel of contents
   transition: 0.4s;
 }
 .mainSection .rightSection .card:hover {
- 
   border: var(--btnBackgroundColorHover) solid 2px;
-rotate:1deg;
-scale: 1.05;
-
+  rotate: 1deg;
+  scale: 1.05;
 }
 
 .mainSection .rightSection .card img {
@@ -91,6 +93,7 @@ scale: 1.05;
   font-size: 0.8rem;
   opacity: 0.5;
 }
+/*================================================================ 5-cardfooter =================================================================*/
 
 .mainSection .rightSection .card .cardFooter {
   background-color: var(--btnBackgroundColor);
@@ -107,25 +110,53 @@ scale: 1.05;
 .mainSection .rightSection .card .cardFooter a:hover {
   color: var(--link);
 }
-/*============================================================ 5-responsive =============================================================*/
+/*============================================================ 6-responsive =============================================================*/
+
 @media screen and (max-width: 700px) {
-  .mainSection .leftSection .btn {
-    font-size: 1rem;
+  .mainSection section {
+    display: block;
   }
   .mainSection .leftSection {
-    width: 40%;
+    display: flex;
+    width: auto;
+    gap: 5px;
   }
-
+  .mainSection .leftSection .btn {
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    padding: 15px 0px;
+  }
+  .mainSection .rightSection {
+    width: 100%;
+  }
   .mainSection .rightSection .card {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 190px;
+  }
+  .mainSection .rightSection .card h3 {
+    font-size: 15px;
+  }
+  .mainSection .rightSection .card img {
+    margin-bottom: 0.4rem;
+  }
+  .mainSection .rightSection .card p {
+    font-size: 11px;
+  }
+  .mainSection .rightSection .card .cardFooter {
+    justify-content: center;
+    padding: 2px 10px;
+  }
+  .mainSection .rightSection .card .cardFooter button {
+    display: none;
+  }
+  .mainSection .rightSection .card .cardFooter a {
+    font-size: smaller;
   }
 }
 @media screen and (max-width: 400px) {
   .mainSection .leftSection .btn {
-    font-size: 1rem;
-  }
-  .mainSection .leftSection {
-    width: 50%;
+    font-size: 0.8rem;
+    letter-spacing: 0.01rem;
+    padding: 5px 0px;
   }
 }

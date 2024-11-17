@@ -3,19 +3,23 @@
 tabel of contents
 =================*/
 /* 
-1-
-2-
+1-left section
+2-right section
 3-
-4-
+4-responsive
 */
+.heroSection section {
+  display: flex;
+}
+
+/*============================================================= 1-leftSection ================================================================*/
 
 .heroSection .leftSection {
   align-items: center;
-  width: 70%;
 }
 
 .heroSection .leftSection h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 
@@ -25,13 +29,33 @@ tabel of contents
 }
 .heroImg {
   padding: 2px;
+  width:150px;
   border: rgb(0, 94, 255) solid 2px;
   border-radius: 50%;
 }
+/*============================================================= 2-right section ================================================================*/
+
+/*============================================================= 4-responsive  ================================================================*/
+
 @media screen and (max-width: 700px) {
-  .heroSection .leftSection h1 {
-    font-size: 30px;
+  .heroSection section {
+    display: block;
   }
+  .heroSection .leftSection {
+    width: 100%;
+  }
+  .heroSection .leftSection h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .heroImg {
+    width: 35%;
+  }
+  
+.heroSection .icons {
+justify-content: center;
+}
+
 }
 @media screen and (max-width: 400px) {
 }

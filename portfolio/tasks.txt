@@ -1,0 +1,18 @@
+
+////////////////// all project tasks /////////////////
+
+1- make a jason file with all my the projects.
+2- desgin the whole portfolio website to be unique and diffrent.
+3- filter the projects according to the programs used.
+4- do a real contact me for any one to send me a massege in my gmail.
+5- make the project responsive on all mobile and all browsers.
+6- day by day upload updates to github.
+
+
+
+
+///////////////// (17 - 11 - 2024) /////////////////// (today tasks. )
+
+1-make the main page responsive (media query convert the sidebar to horizontal)
+2-
+5-commit changes to github
