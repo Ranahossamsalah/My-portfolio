@@ -2,10 +2,12 @@
 
 import React from "react";
 import "./main.css";
+import Card from "../../components/card/card";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function Main() {
   return (
-    <div className="mainSection">
-      <section >
+    <div className="mainSection" id="mainSection">
+      <section>
         <div className="leftSection">
           <button className="btn active"> All Projects</button>
           <button className="btn"> React Projects</button>
@@ -15,51 +17,16 @@ function Main() {
         </div>
         <div className="rightSection">
           <div className="cards flex">
-            <div className="card flex">
-              <img src="./cardGame.png" alt="" />
-              <h3> Cards Game</h3>
-              <p> this is one of my projects using Html, CSS and javascript.</p>
-              <div className="flex cardFooter">
-                <div className="flex ">
-                  <button>
-                    {" "}
-                    <a href="https://soft-dragon-e84452.netlify.app/">
-                      <div className="icon icon-link" />{" "}
-                    </a>
-                  </button>
-                  <button>
-                    {" "}
-                    <a
-                        target="_blank"
-                      href="https://github.com/Ranahossamsalah/cards-game?tab=readme-ov-file"
-                    >
-                      {" "}
-                      <div className="icon icon-github" />{" "}
-                    </a>{" "}
-                  </button>
-                </div>
-                <a 
-                className="flex"
-                  target="_blank"
-                  href="https://github.com/Ranahossamsalah/cards-game?tab=readme-ov-file"
-                >
-                  {" "}
-                 More <span style={{alignSelf:"end"}} className="icon  icon-long-arrow-right" />{" "}
-                </a>
-              </div>
-            </div>
-
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
-            <div className="card"> All Projects</div>
+        
+              <Card
+                title="Cards Game"
+                programs="Html ,CSS ,javascript"
+                githubLink="https://github.com/Ranahossamsalah/cards-game?tab=readme-ov-file"
+                websiteLink="https://soft-dragon-e84452.netlify.app/"
+                disc="This is a simple card Game"
+                img="./cardGame.png"
+              />
+        
           </div>
         </div>
       </section>

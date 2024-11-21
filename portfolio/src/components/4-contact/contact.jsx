@@ -20,7 +20,7 @@ function Contact() {
     setmassege(e.target.value);
   };
   return (
-    <div className="contactMe">
+    <div className="contactMe" id="contactMe">
       <h2 className="flex">
         Contact Me <div className="icon-envelope-o" />{" "}
       </h2>

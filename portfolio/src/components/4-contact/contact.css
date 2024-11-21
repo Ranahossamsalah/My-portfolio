@@ -9,7 +9,7 @@ tabel of contents
 4-responsive
 */
 
-/*================= 1-title & paragraph ===================*/
+/*======================================================== 1-title & paragraph =======================================================*/
 .contactMe .icon-envelope-o {
   margin-left: 2rem;
 }
@@ -22,7 +22,7 @@ tabel of contents
   opacity: 70%;
 }
 
-/*================= 2-form ===================*/
+/*=============================================================== 2-form ===============================================================*/
 .contactMeBox {
   display: flex;
   justify-content: space-between;
@@ -41,20 +41,32 @@ tabel of contents
 
 .contactMe textarea,
 .contactMe input {
-  width: 75%;
+  all: unset;
+  width: 70%;
   border-radius: 5px;
   background-color: var(--btnBackgroundColor);
   border: 2px solid var(--btnBorder);
   opacity: 80%;
   color: var(--secondaryColor);
-  padding: 20px;
+  opacity: 80%;
+  padding: 0.3rem;
 }
+.contactMe textarea:hover,
+.contactMe input:hover {
+  border: 2px solid var(--btnBorderHover);
+}
+.contactMe textarea:focus,
+.contactMe input:focus {
+  border: 2px solid var(--btnBorderHover);
+}
+
 .contactMe input {
   height: 30px;
   margin-bottom: 0.5rem;
 }
 .contactMe textarea {
-  height: 130px;
+  min-height: 130px;
+  resize: vertical;
 }
 .contactMe #submit {
   height: 2.5rem;
@@ -74,7 +86,7 @@ tabel of contents
   opacity: 100%;
   color: var(--success);
 }
-/*================= 4-responsive ===================*/
+/*======================================================== 4-responsive =============================================================*/
 @media screen and (max-width: 700px) {
   .contactMe {
     display: block;

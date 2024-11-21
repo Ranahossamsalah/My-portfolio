@@ -3,8 +3,9 @@
 {
   code: "0";
   title: "CARDS GAME";
-  programs: "Html CSS Javascript";
-  discription: "";
+  programs: "Html , CSS , Javascript";
+  disc: "";
+  details:'';
   img: "";
   video: "";
   githubLink: "https://github.com/Ranahossamsalah/cards-game?tab=readme-ov-file";
@@ -13,8 +14,9 @@
 {
   code: "1";
   title: "Simple Bank System";
-  programs: "Html CSS Javascript";
-  discription: "";
+  programs: "Html, CSS, Javascript";
+  disc: "";
+  details:'';
   img: "";
   video: "";
   githubLink: "https://github.com/Ranahossamsalah/Simple-Bank-System";
@@ -24,7 +26,8 @@
   code: "2";
   title: "";
   programs: "";
-  discription: "";
+  disc: "";
+  details:'';
   img: "";
   video: "";
   githubLink: "";

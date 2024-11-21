@@ -2,6 +2,9 @@
 
 import React, { useState } from "react";
 import "./header.css";
+import "../3-main/Main";
+import "../4-contact/contact";
+import "../2-hero/Hero";
 
 function Header() {
   const [model, setmodel] = useState(false);
@@ -10,26 +13,18 @@ function Header() {
   };
   return (
     <header className="header">
-      <button className="menuBtn icon-menu" onClick={modelVisibility}>
-
-      </button>
+      <button className="menuBtn icon-menu" onClick={modelVisibility}></button>
       <div></div>
       <nav className="navbar">
         <ul>
           <li>
-            <a href="">about</a>
+            <a href="#heroSection">About</a>
           </li>
           <li>
-            <a href="">Main</a>
+            <a href="#mainSection">Projects</a>
           </li>
           <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#contactMe">Contact</a>
           </li>
         </ul>
       </nav>
@@ -37,22 +32,19 @@ function Header() {
         <div className="model">
           <ul className="modelNavbar">
             <li>
-              <button className="closeBtn icon-clear" onClick={modelVisibility}> </button>
+              <button className="closeBtn icon-clear" onClick={modelVisibility}>
+                {" "}
+              </button>
+            </li>
+
+            <li>
+              <a href="#heroSection">About</a>
             </li>
             <li>
-              <a href="">about</a>
+              <a href="#mainSection">Projects</a>
             </li>
             <li>
-              <a href="">Main</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
+              <a href="#contactMe">Contact</a>
             </li>
           </ul>
         </div>

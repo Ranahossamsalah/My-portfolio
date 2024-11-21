@@ -11,13 +11,15 @@ tabel of contents
 6-responsive
 */
 
+
 .mainSection section {
   display: flex;
+
 }
 /*============================================================= 1-leftSection ================================================================*/
 
 .mainSection .leftSection {
-  width: 30%;
+  width: 20%;
 }
 .mainSection .leftSection .btn {
   width: 90%;
@@ -32,7 +34,7 @@ tabel of contents
   transition: all 0.3s;
   margin-bottom: 20px;
   overflow-wrap: break-word;
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
 }
 .mainSection .leftSection .btn:hover {
   background-color: var(--btnBackgroundColorHover);
@@ -47,7 +49,7 @@ tabel of contents
 /*============================================================== 2-rightSection ==========================================================*/
 .mainSection .rightSection {
   margin: auto;
-  width: 70%;
+  width: 90%;
 }
 /*============================================================== 3-cards ==================================================================*/
 .mainSection .rightSection .cards {
@@ -56,60 +58,7 @@ tabel of contents
   justify-content: center;
 }
 
-/*================================================================ 4-card =================================================================*/
 
-.mainSection .rightSection .card {
-  width: 250px;
-  height: 300px;
-  text-align: center;
-  border: var(--btnBackgroundColor) solid 2px;
-  border-radius: 20px;
-  flex-direction: column;
-  transition: 0.4s;
-}
-.mainSection .rightSection .card:hover {
-  border: var(--btnBackgroundColorHover) solid 2px;
-  rotate: 1deg;
-  scale: 1.05;
-}
-
-.mainSection .rightSection .card img {
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2),
-    0 6px 20px 0 rgba(135, 135, 135, 0.19);
-  max-width: 100%;
-  margin-bottom: 1.1rem;
-  border-radius: 20px 20px 0px 0px;
-}
-
-.mainSection .rightSection .card h3 {
-  margin-bottom: 0.4rem;
-}
-.mainSection .rightSection .card p {
-  width: 90%;
-  margin: auto;
-  flex-grow: 1;
-  text-align: justify;
-  font-size: 0.8rem;
-  opacity: 0.5;
-}
-/*================================================================ 5-cardfooter =================================================================*/
-
-.mainSection .rightSection .card .cardFooter {
-  background-color: var(--btnBackgroundColor);
-  justify-content: space-between;
-  padding: 5px 15px;
-  border-radius: 0px 0px 20px 20px;
-}
-.mainSection .rightSection .card .cardFooter .icon-link {
-  margin-right: 10px;
-}
-.mainSection .rightSection .card .cardFooter .icon-long-arrow-right {
-  margin-left: 5px;
-}
-.mainSection .rightSection .card .cardFooter a:hover {
-  color: var(--link);
-}
 /*============================================================ 6-responsive =============================================================*/
 
 @media screen and (max-width: 700px) {

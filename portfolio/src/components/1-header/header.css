@@ -28,6 +28,7 @@ tabel of contents
 
 .header .navbar ul li a {
   padding: 0 10px;
+
 }
 .header ul li a:hover {
   color:var(--link);

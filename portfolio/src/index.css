@@ -8,12 +8,12 @@
   --border: rgb(48, 48, 51);
   --bgColor: rgb(37, 37, 41);
   --containerBg: rgb(25, 25, 28);
-   --btnBorderHover: rgb(179, 184, 224);
-   --btnBorder : rgba(179, 184, 224, 0.152);
-   --btnBackgroundColor:rgba(100, 148, 237, 0.109);
-   --btnBackgroundColorHover:rgba(100, 148, 237, 0.399);
-   --link: rgb(0, 149, 255);
-   --success: rgb(20, 171, 20);
+  --btnBorderHover: rgb(179, 184, 224);
+  --btnBorder: rgba(179, 184, 224, 0.152);
+  --btnBackgroundColor: rgba(100, 148, 237, 0.109);
+  --btnBackgroundColorHover: rgba(100, 148, 237, 0.399);
+  --link:  #e60073;
+  --success: rgb(20, 171, 20);
 }
 * {
   margin: 0;
@@ -24,9 +24,12 @@
 body {
   color: var(--secondary);
 }
-html{
+html {
   font-size: 18px;
+/* to enable smooth scrolling for the whole page */
+  scroll-behavior: smooth;
 }
+
 .flex {
   display: flex;
 }
@@ -42,10 +45,9 @@ a {
 }
 a:hover {
   cursor: pointer;
-
 }
 button {
-  all:unset;
+  all: unset;
   cursor: pointer;
 }
 ul {
@@ -69,12 +71,11 @@ body {
 }
 
 @media screen and (max-width: 700px) {
- 
   .container {
     width: 90%;
     padding: 0 2%;
   }
-  html{
+  html {
     font-size: 16px;
   }
   .line {
@@ -86,10 +87,11 @@ body {
     width: 98%;
     padding: 0 2%;
   }
- p , div{
-  font-size: 12px;
- }
- .line {
-  margin: 15px 0;
-}
+  p,
+  div {
+    font-size: 12px;
+  }
+  .line {
+    margin: 15px 0;
+  }
 }
