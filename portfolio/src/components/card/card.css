@@ -18,10 +18,12 @@
   
   .mainSection .rightSection .card img {
     width: 250px;
+    height: 150px;
+    object-fit: cover;
     box-shadow: 0 4px 8px 0 rgba(126, 126, 126, 0.2),
       0 6px 20px 0 rgba(135, 135, 135, 0.19);
     max-width: 100%;
-    margin-bottom: 1.1rem;
+    margin-bottom: 0.8rem;
     border-radius: 20px 20px 0px 0px;
     padding: 1px 1px;
   }

@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import "./contact.css";
+
 function Contact() {
+
   const [email, setemail] = useState("");
   const [massege, setmassege] = useState("");
   const handleSubmit = (e) => {

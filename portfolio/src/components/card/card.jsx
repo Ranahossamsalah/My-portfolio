@@ -14,26 +14,25 @@ function Card(props) {
   const [img, setimg] = useState(props.img);
   return (
     <div>
-
       <div className="card flex">
         <img src={props.img} alt="" />
         <h3> {title}</h3>
         <p>
           {" "}
           {props.disc} <br />
-          Programs used: {props.programs}
+          Programs used: {programs}
         </p>
         <div className="flex cardFooter">
           <div className="flex ">
             <button>
               {" "}
-              <a href={props.websiteLink}>
+              <a target="_blank" href={websiteLink}>
                 <div className="icon icon-link" />{" "}
               </a>
             </button>
             <button>
               {" "}
-              <a target="_blank" href={props.githubLink}>
+              <a target="_blank" href={githubLink}>
                 {" "}
                 <div className="icon icon-github" />{" "}
               </a>{" "}
@@ -41,7 +40,6 @@ function Card(props) {
           </div>
           <NavLink
             className="flex"
-            target="_blank"
             to="/carddetails"
             // reactrouter//////////////////////////////////////////////////////////////////////////////////
           >

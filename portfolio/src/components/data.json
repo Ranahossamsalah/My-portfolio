@@ -1,0 +1,68 @@
+[{
+  "projectId": "1",
+  "title": "Cards Game",
+  "programs": "Html , CSS , Javascript",
+  "disc": "this is a responsive simple card game.",
+  "details": "",
+  "img": "./cardGame.png",
+  "video": "",
+  "githubLink": "https://github.com/Ranahossamsalah/cards-game?tab=readme-ov-file",
+  "websiteLink": "https://soft-dragon-e84452.netlify.app"
+  },
+ {
+   "projectId": "2",
+  "title": "Simple Bank System",
+  "programs": "Html , CSS , Javascript",
+  "disc": "this is a responsive simple bank system.",
+  "details": "",
+  "img": "./simpleBankImg.JPG",
+  "video": "",
+  "githubLink": "https://github.com/Ranahossamsalah/Simple-Bank-System",
+  "websiteLink": "https://fabulous-mooncake-30aca7.netlify.app/"
+},
+
+{
+  "projectId": "3",
+  "title": "SSGT Web Search",
+  "programs": "CSS ,React.js",
+  "disc": "this is a responsive web search site.",
+  "details": "",
+  "img": "./ssgptImg.JPG",
+  "video": "",
+  "githubLink":"https://github.com/Ranahossamsalah/Sequal-Solutions-Web",
+  "websiteLink":"https://benevolent-sunburst-22f1da.netlify.app"
+},
+{
+  "projectId": "4",
+  "title": "Kutub",
+  "programs": "CSS ,React.js",
+  "disc": "you can read, listen to, borrow and buy books and Atend book events.",
+  "details": "",
+  "img": "./kutub.JPG",
+  "video": "",
+  "githubLink":"https://github.com/Ranahossamsalah/-kutub-",
+  "websiteLink":"https://creative-khapse-972521.netlify.app/"
+},
+{
+  "projectId": "5",
+  "title": "Genersl info Quiz",
+  "programs": "Html , CSS , Javascript",
+  "disc": "if you want to test your general informations try this test.",
+  "details": "",
+  "img": "./general-info.JPG",
+  "video": "",
+  "githubLink":"https://github.com/Ranahossamsalah/General-info",
+  "websiteLink":"https://clever-sawine-4a6647.netlify.app/"
+},
+{
+  "projectId": "6",
+  "title": "OShop",
+  "programs": "bootstrap, React.js",
+  "disc": "Stay Up To Date With Our Stylish Collection",
+  "details": "",
+  "img": "./OShop.JPG",
+  "video": "",
+  "githubLink":"https://github.com/Ranahossamsalah/OShop",
+  "websiteLink":"https://timely-begonia-66df8e.netlify.app/"
+}
+]
