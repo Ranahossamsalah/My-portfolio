@@ -11,13 +11,14 @@ import projectIdSlice from "../redux/slices/projectIdSlice";
 import favoritesSlice from "../redux/slices/favoritesSlice";
 
 function Main() {
-  const [projectId, setprojectId] = useState([]);
+  const dispatch = useDispatch();
+  const [projectId, setprojectId] = useState(["1", "2", "3", "4", "5", "6"]);
   // @ts-ignore
   const projectIdState = useSelector((state) => state.projectIdSlice.projectId);
   // @ts-ignore
   const favoritesState = useSelector((state) => state.favoritesSlice.favorites);
 
-  const dispatch = useDispatch();
+  
 
   useEffect(() => {
     dispatch(addProjectId(projectId));
@@ -84,9 +85,8 @@ function Main() {
         <div className="rightSection">
           <div className="cards flex">
             {data.map((data, i) =>
-            
-              projectIdState.map((id, i) =>
-                id === data.projectId ? (
+              projectIdState.map((idState, i) =>
+                idState === data.projectId ? (
                   <Card
                     key={i}
                     title={data.title}

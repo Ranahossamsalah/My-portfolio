@@ -24,7 +24,7 @@ function Card(props) {
         </p>
         <div className="flex cardFooter">
           <div className="flex ">
-            <button>
+            <button  >
               {" "}
               <a target="_blank" href={websiteLink}>
                 <div className="icon icon-link" />{" "}

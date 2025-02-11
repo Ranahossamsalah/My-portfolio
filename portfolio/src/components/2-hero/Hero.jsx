@@ -22,7 +22,7 @@ function Hero() {
         </div>
 
         <div className="rightSection">
-          animation fgbknfjgnbjfgbkgfd dfgknfdjngkdf dfgmk fnghkfgmb;df,bl
+          {/* animation fgbknfjgnbjfgbkgfd dfgknfdjngkdf dfgmk fnghkfgmb;df,bl */}
         </div>
       </section>
     </div>
